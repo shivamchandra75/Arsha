@@ -1,0 +1,164 @@
+/*------------------*/
+/* Utility classes */
+/*-----------------*/
+
+.sec-padding {
+  padding: 9.4rem 6rem;
+}
+
+.hero-heading {
+  font-size: 4rem;
+}
+
+.primary-heading {
+  font-size: 4rem;
+}
+.secondary-heading {
+  font-size: 3.2rem;
+}
+
+.tertiary-heading {
+  font-size: 2.8rem;
+}
+
+.para {
+  font-size: 1.65rem;
+}
+
+// .tertiary-heading{
+//   font-size: ;
+// }
+
+.location-card-icon {
+  font-size: 1.8rem;
+}
+/*-------------*/
+/* components */
+/*-------------*/
+
+.team-cards-container {
+  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+
+  .tertiary-heading {
+    font-size: 2.6rem;
+  }
+  .para {
+    font-size: 1.5rem;
+  }
+}
+
+.team-card {
+  .social-icons {
+    gap: 1.4rem;
+    .social-icon {
+      font-size: 1rem;
+    }
+  }
+}
+
+.pricing-card {
+  box-shadow: 0px 3rem 4.5rem rgba(black, 0.2);
+  padding: 3em;
+  border-top: 3px solid var(--btn-clr);
+  border-radius: 1rem;
+
+  ul {
+    li {
+      .para {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .secondary-heading {
+    font-size: 6rem;
+    font-weight: normal;
+  }
+  button {
+    font-size: 1.6rem;
+  }
+}
+
+.location-card {
+  .para {
+    font-size: 1.6rem;
+  }
+}
+
+.form-div {
+  input {
+    padding: 0.5em 4em 0.5em 1.4em;
+  }
+}
+/*-------------*/
+/* general*/
+/*-------------*/
+
+.clients-section {
+  gap: 2.5rem;
+  padding: 2em 15em;
+}
+
+#about {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
+.links-section {
+  .tertiary-heading {
+    font-size: 2.4rem;
+  }
+  .para {
+    font-size: 1.4rem;
+  }
+}
+.arsha-div > * {
+  margin-bottom: 2rem;
+}
+
+.links-div > * {
+  margin-bottom: 1.2rem;
+}
+.services-div > * {
+  margin-bottom: 1rem;
+}
+
+.social-div {
+  .social-icons {
+    gap: 1.6rem;
+  }
+}
+.social-div > * {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1139px) {
+  .ques-section,
+  .skills-section {
+    .ques-img,
+    .skills-img {
+      justify-content: center;
+    }
+    img {
+      max-width: 60%;
+    }
+  }
+
+  .ques-img {
+    order: 1;
+  }
+  .ques-txt {
+    order: 2;
+  }
+}
+
+@media (max-width: 1227px) {
+  .hero-text {
+    order: 2;
+  }
+  .hero-img-container {
+    order: 1;
+  }
+}

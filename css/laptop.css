@@ -1,0 +1,164 @@
+/*------------------*/
+/* Utility classes */
+/*-----------------*/
+.sec-padding {
+  padding: 9.4rem 6rem;
+}
+
+.hero-heading {
+  font-size: 4rem;
+}
+
+.primary-heading {
+  font-size: 4rem;
+}
+
+.secondary-heading {
+  font-size: 3.2rem;
+}
+
+.tertiary-heading {
+  font-size: 2.8rem;
+}
+
+.para {
+  font-size: 1.65rem;
+}
+
+.location-card-icon {
+  font-size: 1.8rem;
+}
+
+/*-------------*/
+/* components */
+/*-------------*/
+.team-cards-container {
+  gap: 2rem;
+  -ms-grid-columns: (minmax(300px, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+}
+
+.team-cards-container .tertiary-heading {
+  font-size: 2.6rem;
+}
+
+.team-cards-container .para {
+  font-size: 1.5rem;
+}
+
+.team-card .social-icons {
+  gap: 1.4rem;
+}
+
+.team-card .social-icons .social-icon {
+  font-size: 1rem;
+}
+
+.pricing-card {
+  -webkit-box-shadow: 0px 3rem 4.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3rem 4.5rem rgba(0, 0, 0, 0.2);
+  padding: 3em;
+  border-top: 3px solid var(--btn-clr);
+  border-radius: 1rem;
+}
+
+.pricing-card ul li .para {
+  font-size: 1.5rem;
+}
+
+.pricing-card .secondary-heading {
+  font-size: 6rem;
+  font-weight: normal;
+}
+
+.pricing-card button {
+  font-size: 1.6rem;
+}
+
+.location-card .para {
+  font-size: 1.6rem;
+}
+
+.form-div input {
+  padding: 0.5em 4em 0.5em 1.4em;
+}
+
+/*-------------*/
+/* general*/
+/*-------------*/
+.clients-section {
+  gap: 2.5rem;
+  padding: 2em 15em;
+}
+
+#about .grid {
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.links-section .tertiary-heading {
+  font-size: 2.4rem;
+}
+
+.links-section .para {
+  font-size: 1.4rem;
+}
+
+.arsha-div > * {
+  margin-bottom: 2rem;
+}
+
+.links-div > * {
+  margin-bottom: 1.2rem;
+}
+
+.services-div > * {
+  margin-bottom: 1rem;
+}
+
+.social-div .social-icons {
+  gap: 1.6rem;
+}
+
+.social-div > * {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1139px) {
+  .ques-section .ques-img,
+  .ques-section .skills-img,
+  .skills-section .ques-img,
+  .skills-section .skills-img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ques-section img,
+  .skills-section img {
+    max-width: 60%;
+  }
+  .ques-img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .ques-txt {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (max-width: 1227px) {
+  .hero-text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .hero-img-container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+/*# sourceMappingURL=laptop.css.map */

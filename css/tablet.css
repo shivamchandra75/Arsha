@@ -1,0 +1,73 @@
+/*------------------*/
+/* Utility classes */
+/*-----------------*/
+/*-------------*/
+/* components */
+/*-------------*/
+.pricing-card-container {
+  justify-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.location-grid {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+.service-card-cont {
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/*------------------*/
+/*     general     */
+/*-----------------*/
+header {
+  padding: 3.2rem 4rem;
+}
+
+.burger-menu {
+  display: unset;
+}
+
+.nav {
+  background-color: white;
+  position: absolute;
+  min-width: 78%;
+  top: 8rem;
+  border-radius: 2rem;
+  padding: 3em 1em;
+  display: none;
+}
+
+.nav-list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.nav-list .nav-links {
+  margin-left: 0;
+}
+
+.nav-list .nav-links a {
+  color: var(--accent-clr);
+}
+
+.nav-list .nav-links button {
+  color: var(--accent-clr);
+}
+
+@media (max-width: 910px) {
+  .team-cards-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=tablet.css.map */

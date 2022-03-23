@@ -1,0 +1,60 @@
+/*------------------*/
+/* Utility classes */
+/*-----------------*/
+
+/*-------------*/
+/* components */
+/*-------------*/
+
+.pricing-card-container {
+  justify-items: center;
+  grid-template-columns: 1fr;
+}
+
+.location-grid {
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+.service-card-cont {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+/*------------------*/
+/*     general     */
+/*-----------------*/
+
+header {
+  padding: 3.2rem 4rem;
+}
+.burger-menu {
+  display: unset;
+}
+
+.nav {
+  background-color: white;
+  position: absolute;
+  min-width: 78%;
+  top: 8rem;
+  border-radius: 2rem;
+  padding: 3em 1em;
+  display: none;
+}
+
+.nav-list {
+  flex-direction: column;
+  justify-content: start;
+  .nav-links {
+    margin-left: 0;
+    & a {
+      color: var(--accent-clr);
+    }
+    & button {
+      color: var(--accent-clr);
+    }
+  }
+}
+@media (max-width: 910px) {
+  .team-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
