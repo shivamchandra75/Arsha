@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,sBAAsB;AACtB,qBAAqB;AACrB,qBAAqB;AAErB,AAAA,YAAY,CAAC;EACX,OAAO,EAAE,WAAW;CACrB;;AAED,iBAAiB;AACjB,gBAAgB;AAChB,iBAAiB;AAEjB,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,GAAG;CACX;;AACD,sBAAsB;AACtB,qBAAqB;AACrB,qBAAqB;AAErB,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,GAAG;CACf;;AAED,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,WAAW;CACrB",
     "sources": [
         "../scss/phone.scss"
     ],

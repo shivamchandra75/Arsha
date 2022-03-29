@@ -398,26 +398,31 @@ img {
     // grid-template-rows: repeat(9, 100px);
     grid-template-areas:
       "one    two    three"
+      "one    two   six"
       "one    five   six"
       "four   five   six"
       "four   five   six"
-      "seven  five   six"
+      "seven  five   eight"
       "seven  nine   eight"
-      ".      nine   eight";
+      ".      nine   .";
+
+    justify-items: stretch;
+    align-items: stretch;
   }
 
   .item {
-    border: 1px solid blue;
     overflow: hidden;
+    display: grid;
     img {
       transition: transform 0.2s ease-in-out;
+      height: 100%;
+      width: 100%;
     }
     &:hover img {
       transform: scale(1.1);
     }
   }
   .item1 {
-    // grid-row: span 2;
     grid-area: one;
   }
   .item2 {
@@ -427,27 +432,21 @@ img {
     grid-area: three;
   }
   .item4 {
-    // grid-row: span 2;
     grid-area: four;
   }
   .item5 {
-    // grid-row: span 4;
     grid-area: five;
   }
   .item6 {
-    // grid-row: span 4;
     grid-area: six;
   }
   .item7 {
-    // grid-row: span 2;
     grid-area: seven;
   }
   .item8 {
-    // grid-row: span 2;
     grid-area: eight;
   }
   .item9 {
-    // grid-row: span 2;
     grid-area: nine;
   }
 }
@@ -489,9 +488,18 @@ img {
     margin: 2rem 0;
   }
   input {
-    padding: 0.5em 9em 0.5em 3em;
+    padding: 0.5em 0em 0.5em 3em;
     border-radius: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.8);
+  }
+
+  #subject {
+    width: 95%;
+  }
+
+  #your-name,
+  #your-email {
+    width: 90%;
   }
 }
 /*-------------*/
@@ -580,14 +588,12 @@ header {
   }
 }
 
-.clients-section {
-  gap: 4rem;
-  padding: 2em 20em;
-}
 .ques-txt {
   flex-direction: column;
 }
 .clients-section {
+  padding: 2em 20em;
+  grid-template-columns: repeat(6, 1fr);
   .client-img-div {
     img {
       max-width: 70%;
@@ -616,6 +622,13 @@ header {
 .links-section {
   gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
+  justify-items: start;
+
+  //this margin zero is to cancel the margin set to all child except first of sec-padding class removing this will make the elements of links-sectio to center
+
+  & > * {
+    margin: 0;
+  }
 }
 
 .arsha-div {

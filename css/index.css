@@ -449,12 +449,17 @@ img {
 #portfolio .photo-grid {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: "one    two    three" "one    five   six" "four   five   six" "four   five   six" "seven  five   six" "seven  nine   eight" ".      nine   eight";
+      grid-template-areas: "one    two    three" "one    two   six" "one    five   six" "four   five   six" "four   five   six" "seven  five   eight" "seven  nine   eight" ".      nine   .";
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 #portfolio .item {
-  border: 1px solid blue;
   overflow: hidden;
+  display: -ms-grid;
+  display: grid;
 }
 
 #portfolio .item img {
@@ -462,6 +467,8 @@ img {
   transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  height: 100%;
+  width: 100%;
 }
 
 #portfolio .item:hover img {
@@ -471,13 +478,14 @@ img {
 
 #portfolio .item1 {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: one;
 }
 
 #portfolio .item2 {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: two;
 }
@@ -489,14 +497,14 @@ img {
 }
 
 #portfolio .item4 {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: four;
 }
 
 #portfolio .item5 {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 4;
   -ms-grid-column: 2;
   grid-area: five;
@@ -510,7 +518,7 @@ img {
 }
 
 #portfolio .item7 {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: seven;
@@ -524,7 +532,7 @@ img {
 }
 
 #portfolio .item9 {
-  -ms-grid-row: 6;
+  -ms-grid-row: 7;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: nine;
@@ -596,9 +604,18 @@ img {
 }
 
 .form-div input {
-  padding: 0.5em 9em 0.5em 3em;
+  padding: 0.5em 0em 0.5em 3em;
   border-radius: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.form-div #subject {
+  width: 95%;
+}
+
+.form-div #your-name,
+.form-div #your-email {
+  width: 90%;
 }
 
 /*-------------*/
@@ -690,16 +707,17 @@ header .tertiary-heading {
   font-size: 3.5rem;
 }
 
-.clients-section {
-  gap: 4rem;
-  padding: 2em 20em;
-}
-
 .ques-txt {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.clients-section {
+  padding: 2em 20em;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
 }
 
 .clients-section .client-img-div img {
@@ -734,6 +752,11 @@ header .tertiary-heading {
   gap: 2rem;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  justify-items: start;
+}
+
+.links-section > * {
+  margin: 0;
 }
 
 .arsha-div {

@@ -80,15 +80,21 @@
 }
 
 .form-div input {
-  padding: 0.5em 4em 0.5em 1.4em;
+  padding: 0.5em 0em 0.5em 1.4em;
 }
 
 /*-------------*/
 /* general*/
 /*-------------*/
+.hero-section {
+  padding: 3.2rem 6rem;
+}
+
 .clients-section {
   gap: 2.5rem;
   padding: 2em 15em;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 #about .grid {

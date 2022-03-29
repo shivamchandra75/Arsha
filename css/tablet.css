@@ -10,6 +10,73 @@
       grid-template-columns: 1fr;
 }
 
+#portfolio .photo-grid {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "one    two" "one    three" "four   five" "four   five" "six    five" "six    five" "six    seven" "six    seven" "eight  nine" "eight  nine" ".      nine";
+}
+
+#portfolio .item1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+#portfolio .item2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+#portfolio .item3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: three;
+}
+
+#portfolio .item4 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+#portfolio .item5 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+#portfolio .item6 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  grid-area: six;
+}
+
+#portfolio .item7 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: seven;
+}
+
+#portfolio .item8 {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: eight;
+}
+
+#portfolio .item9 {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: nine;
+}
+
 .location-grid {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
@@ -64,10 +131,32 @@ header {
   color: var(--accent-clr);
 }
 
+.hero-section {
+  padding: 3.2rem 6rem;
+}
+
 @media (max-width: 910px) {
   .team-cards-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .links-section {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 740px) {
+  .form-div input {
+    padding: 0.5em 0em 0.5em 1em;
+  }
+}
+
+@media (max-width: 700px) {
+  .clients-section {
+    padding: 2em 8em;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 /*# sourceMappingURL=tablet.css.map */
